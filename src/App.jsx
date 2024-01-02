@@ -17,7 +17,7 @@ import Home from './Pages/Home/Home'
 const App = () => {
 
   return (
-    <React.Fragment>
+    <div className='container'>
       <Navbar/>
       <main>
         <Routes>
@@ -25,7 +25,7 @@ const App = () => {
         </Routes>
       </main>
       <Footer/>
-    </React.Fragment>
+    </div>
   )
 }
 

@@ -8,3 +8,17 @@
 html{
     scroll-behavior: smooth;
 }
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
