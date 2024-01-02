@@ -1,8 +1,13 @@
-
+@font-face {
+    font-family: Akisa;
+    src: url(./Fonts/akisa.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .3s linear;
 }
 
 html{
@@ -12,6 +17,11 @@ html{
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
+}
+body{
+    background: #040406;
+    color: white;
+    font-family: 'Dhurjati', sans-serif;
 }
 a{
     text-decoration: none;

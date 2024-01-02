@@ -20,13 +20,13 @@ const App = () => {
   return (
     <div className='container'>
       <Navbar/>
-      <main>
+      {/* <main>
         <Routes>
           <Route index element={<Home/>} />
           <Route path='*' element={<NoMatch/>}/>
         </Routes>
       </main>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }

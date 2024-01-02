@@ -1,0 +1,110 @@
+.Nav_container{
+    position: absolute;
+    width: 100%;
+    padding: 23px 43px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid red;
+
+
+    .Routs{
+        width: auto;
+        display: flex;
+        .logo{
+            margin-right: 90px;
+            text-align: center;
+            a{
+                font-family: Akisa;
+                color: white;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                span{
+                    background: linear-gradient(135deg, #9747FF 27.36%, #1DA1F2 44.84%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                }
+            }
+            
+            
+        }
+        .nav_links{
+            display: flex;
+            align-items: center;
+
+            li{
+                
+                .underline{
+                    width: 0%;
+                    transition: all 0.4s linear;
+                    position: absolute;
+                    left: 0;
+                }
+                text-align: center;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-right: 70px;
+                position: relative;
+                cursor: pointer;
+                transition: all .4s linear;
+                &:hover{
+                  
+                    .underline{
+                        width: 100%;
+                        height: 2px;
+                        bottom: -5px;
+                        background: linear-gradient(114deg, #C93677 -2.94%, #33ADDF 41.89%);
+                        border-radius: 2px;
+                        right: 0;
+                    }
+                }
+             .drop_menuWrapper{
+                display: none;
+                position: absolute;
+                width: 200px;
+                height: auto;
+                
+                .drop_first{
+                    width: 100%;
+        
+                    margin-top: 10px;
+                    border: 1px solid red;
+                    li{
+                        text-align: left;
+                        margin-right: 0 !important;
+                        
+                    }
+                }
+
+             }
+             &:hover{
+                .drop_menuWrapper{
+                    display: block;
+                }
+             }
+                
+             
+
+                &::first-letter{
+                    background: linear-gradient(135deg, #9747FF 27.36%, #1DA1F2 44.84%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: #9747FF;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
