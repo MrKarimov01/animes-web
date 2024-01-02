@@ -4,6 +4,7 @@ import Navbar from './view/navbar/Navbar'
 import Footer from './view/footer/Footer'
 import { Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
+import NoMatch from './Pages/NoMatch/NoMatch'
 // import { init } from 'console-ban'
 
 
@@ -22,6 +23,7 @@ const App = () => {
       <main>
         <Routes>
           <Route index element={<Home/>} />
+          <Route path='*' element={<NoMatch/>}/>
         </Routes>
       </main>
       <Footer/>
