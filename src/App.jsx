@@ -1,4 +1,9 @@
 import React from 'react'
+
+import Navbar from './view/navbar/Navbar'
+import Footer from './view/footer/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home/Home'
 // import { init } from 'console-ban'
 
 
@@ -12,7 +17,15 @@ import React from 'react'
 const App = () => {
 
   return (
-    <div>App</div>
+    <React.Fragment>
+      <Navbar/>
+      <main>
+        <Routes>
+          <Route index element={<Home/>} />
+        </Routes>
+      </main>
+      <Footer/>
+    </React.Fragment>
   )
 }
 
