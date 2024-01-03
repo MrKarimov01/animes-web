@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all .3s linear;
 }
 
 html{
@@ -19,6 +18,7 @@ html{
     position: relative;
 }
 body{
+    transition: all .2s linear;
     background: #040406;
     color: white;
     font-family: 'Dhurjati', sans-serif;

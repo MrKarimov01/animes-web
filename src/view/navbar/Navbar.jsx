@@ -28,6 +28,8 @@ const Navbar = () => {
                 <li>first</li>
                 <li>sevent</li>
                 <li>last</li>
+                <li>last</li>
+                <li>last</li>
               </ul>
           </div>
           </li>
