@@ -5,16 +5,16 @@ import Footer from './view/footer/Footer'
 import { Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import NoMatch from './Pages/NoMatch/NoMatch'
-// import { init } from 'console-ban'
+import { init } from 'console-ban'
 
 
 
-// init({
-//   // Rewrite the <body></body> as a string
-//   write: '<h1> Stop </h1>',
-//   redirect: "Salom"
+init({
+  // Rewrite the <body></body> as a string
+  write: '<h1> Stop </h1>',
+  redirect: "Salom"
 
-// })
+})
 const App = () => {
 
   return (
