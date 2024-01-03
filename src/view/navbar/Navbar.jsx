@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./../viewS.scss"
 import { Link } from 'react-router-dom'
 import { Premium, Search, Usericon } from '../../assets/icons.jsx'
 
 const Navbar = () => {
+  const [searchToggle,setSearchToggle]= useState(false)
+  const ToggleBtn = (element,element2)=>{
+    element(!element2)
+    console.log(element2);
+  }
+
+
   return (
     <div className='Nav_container'>
       <div className="Routs">
@@ -44,13 +51,15 @@ const Navbar = () => {
       </div>
       <div className="fuctions">
         <Link to={"/premium"} className='nav_Premium'><Premium/><span>Premium</span></Link>
-        <div className="search_wrapper">
-        <div className="search_bar">
+        <div className={searchToggle?"search_wrapper block":"search_wrapper"}>
+        <div className="search_bar" >
           <input maxLength={30} min={3} type="text" placeholder='Anime Qidirish'/>
           <Search/>
         </div>
         </div>
-        <div className="search_toggle">
+        <div className="search_toggle" onClick={()=>{
+          ToggleBtn(setSearchToggle, searchToggle)
+        }} >
           <Search/> 
         </div>
         <div className="auth_user">
