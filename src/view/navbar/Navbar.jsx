@@ -1,6 +1,7 @@
 import React from 'react'
 import "./../viewS.scss"
 import { Link } from 'react-router-dom'
+import { Premium, Search, Usericon } from '../../assets/icons.jsx'
 
 const Navbar = () => {
   return (
@@ -42,7 +43,19 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="fuctions">
-
+        <Link to={"/premium"} className='nav_Premium'><Premium/><span>Premium</span></Link>
+        <div className="search_wrapper">
+        <div className="search_bar">
+          <input maxLength={30} min={3} type="text" placeholder='Anime Qidirish'/>
+          <Search/>
+        </div>
+        </div>
+        <div className="search_toggle">
+          <Search/> 
+        </div>
+        <div className="auth_user">
+          <Usericon/>
+        </div>
       </div>
     </div>
   )

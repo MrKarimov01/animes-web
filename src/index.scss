@@ -1,8 +1,11 @@
 @font-face {
     font-family: Akisa;
-    src: url(./Fonts/akisa.otf);
+    src: url(./assets/Fonts/akisa.otf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+@font-face {
+    font-family: Inter;
+    src: url(./assets//Fonts/inter.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +24,7 @@ body{
     transition: all .2s linear;
     background: #040406;
     color: white;
-    font-family: 'Dhurjati', sans-serif;
+    font-family: Inter;
 }
 a{
     text-decoration: none;
